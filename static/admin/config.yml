@@ -17,14 +17,15 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'navbar'
-    label: 'Navigation Bar'
+    label: 'Navigation Menu'
     files:
-      - name: 'file path'
+      - name: 'navmenu file path'
         file: 'data/navbar.yml'
+        label: 'navmenu file path'
         fields:
           - widget: list
             name: navbar_links
-            label: Navigation Bar Items
+            label: Navigation Menu Items
             required: true
             hint: Appears in the header of the site.
             fields:
