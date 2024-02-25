@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://hugonoka.netlify.app/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 [markup.goldmark.parser.attribute]

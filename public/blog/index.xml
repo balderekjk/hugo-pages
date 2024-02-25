@@ -13,7 +13,7 @@
       <link>http://localhost:1313/blog/2024-02-21-a-new-page/</link>
       <pubDate>Wed, 21 Feb 2024 03:15:22 +0000</pubDate>
       <guid>http://localhost:1313/blog/2024-02-21-a-new-page/</guid>
-      <description>Wysiwyg Mo bettah than what I made before&#xA;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum consequatur nulla sunt facere, magni illo odio reiciendis, dolores repellendus soluta impedit quaerat. Maiores repudiandae eaque vel, incidunt soluta eum, nesciunt quis ipsam beatae delectus ipsa ullam enim, alias possimus.&#xA;one two one two </description>
+      <description>Wysiwyg Mo bettah than what I made before&#xA;outermost = grid&#xA;inner = subgrid&#xA;needs: minimum width, # of stacked items,&#xA;100 $100 the squarest placeholder image you will ever see! 400x200 $300 a beautifully rectangular placeholder. 300x700 $500 a tall portrait placeholder. 100x200 $150 one more for good measure. 200x100 $150 and&amp;hellip; last one. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum consequatur nulla sunt facere, magni illo odio reiciendis, dolores repellendus soluta impedit quaerat.</description>
     </item>
   </channel>
 </rss>

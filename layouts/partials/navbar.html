@@ -1,0 +1,24 @@
+<nav>
+	<ul>
+		{{ with .Site.Data.navbar }}
+		{{range .navbar_links}}
+		<li>
+			<a href="{{ .url }}">{{ .name }}
+				<!-- Display a dropdown icon, if this element has children -->
+				{{with .children }}
+				<i class="ri-arrow-down-s-line"></i>
+				{{end}}
+			</a>
+			<!-- Display the children list, if this element has children -->
+			{{if .children}}
+			<ul>
+				{{range .children }}
+				<a href="{{ .url }}">{{ .name }}</a>
+				{{end}}
+			</ul>
+			{{end}}
+		</li>
+		{{ end }}
+		{{ end }}
+	</ul>
+</nav>
