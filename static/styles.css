@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+}
+
+body > * {
+  width: min(100%, 1080px);
+  margin-inline: auto;
+}
+
+.red {
+  color: rgb(255, 0, 0);
+}
+
+.green {
+  color: rgb(0, 255, 0);
+}
+
+.blue {
+  color: rgb(0, 0, 255);
+}
+
+.pull-left {
+  float: left;
+  margin-right: 1rem;
+}
+
+.pull-right {
+  float: right;
+  margin-left: 1rem;
+}
+
+.grid {
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+}
+
+.grid > li {
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: subgrid;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid silver;
+  box-shadow: 0 2px 5px gainsboro;
+}
+
+.border-shadow {
+  border: 1px solid silver;
+  box-shadow: 0 2px 5px gainsboro;
+}
+
+.grid > li > ul {
+  margin-bottom: 1rem;
+}
+
+.grid > li > ul > li:nth-child(n + 2) {
+  margin-inline: 1rem;
+}
+
+.grid,
+.grid ul {
+  padding: 0;
+  list-style: none;
+}
+
+.grid li {
+  padding: 0 !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+.grid img,
+.img-span img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.img-cover img {
+  object-fit: cover;
+}
+
+.img-contain img {
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.img-3-2 img {
+  aspect-ratio: 3 / 2;
+}
+
+.img-2-3 img {
+  aspect-ratio: 2 / 3;
+}
+
+.img-16-9 img {
+  aspect-ratio: 16 / 9;
+}
+.img-9-16 img {
+  aspect-ratio: 9 / 16;
+}
+
+.img-1-1 img {
+  aspect-ratio: 1 / 1;
+}
+
+@media screen and (max-width: 768px) {
+  .pull-left,
+  .pull-right {
+    float: none;
+    margin-left: initial;
+    margin-right: initial;
+  }
+
+  .pull-left:has(img),
+  .pull-right:has(img) {
+    text-align: center;
+  }
+}
