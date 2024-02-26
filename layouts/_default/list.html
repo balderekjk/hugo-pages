@@ -1,3 +1,28 @@
-{{ partial "navbar" . }}
-<h1>List Template</h1>
-<hr><br>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/styles.css" />
+	<title>Hugo List Demo</title>
+</head>
+
+<body>
+	{{ partial "navbar" . }}
+	<div class="content">
+		<ul>
+			{{ range (where .Pages "Section" "blog") }}
+			<li>
+				<a href="{{ .RelPermalink }}">
+					{{ .Title }}
+				</a>
+			</li>
+			{{ end }}
+		</ul>
+
+	</div>
+	{{ partial "to-top" . }}
+</body>
+
+</html>

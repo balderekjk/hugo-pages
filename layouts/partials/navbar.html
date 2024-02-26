@@ -1,19 +1,23 @@
 <nav>
-	<ul>
+	<ul id="hamburger">
+		<li><label><input type="checkbox" checked>&#9776;</label></li>
+	</ul>
+	<ul id="nav-list" class="flex-center-x green">
 		{{ with .Site.Data.navbar }}
 		{{range .navbar_links}}
 		<li>
 			<a href="{{ .url }}">{{ .name }}
-				<!-- Display a dropdown icon, if this element has children -->
-				{{with .children }}
-				<i class="ri-arrow-down-s-line"></i>
-				{{end}}
 			</a>
-			<!-- Display the children list, if this element has children -->
 			{{if .children}}
+			<label>
+				&#9662;
+				<input type="checkbox" checked>
+			</label>
 			<ul>
 				{{range .children }}
-				<a href="{{ .url }}">{{ .name }}</a>
+				<li>
+					<a href="{{ .url }}">{{ .name }}</a>
+				</li>
 				{{end}}
 			</ul>
 			{{end}}

@@ -21,11 +21,11 @@ collections:
     files:
       - name: 'navmenu file path'
         file: 'data/navbar.yml'
-        label: 'navmenu file path'
+        label: 'Navigation Menu Links'
         fields:
           - widget: list
             name: navbar_links
-            label: Navigation Menu Items
+            label: Navigation Menu Links
             required: true
             hint: Appears in the header of the site.
             fields:

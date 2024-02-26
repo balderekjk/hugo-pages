@@ -5,22 +5,26 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Document</title>
+	<link rel="stylesheet" href="/styles.css" />
+	<title>Hugo Demo</title>
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
 	{{ partial "navbar" . }}
-	<h1>Nice. It's looking good already.</h1>
-	<ul>
-		{{ range (where .Pages "Section" "blog") }}
-		<li>
-			<a href="{{ .RelPermalink }}">
-				{{ .Title }}
-			</a>
-		</li>
-		{{ end }}
-	</ul>
+	<div class="content">
+		<h1>Nice. It's looking good already.</h1>
+		<ul>
+			{{ range (where .Pages "Section" "blog") }}
+			<li>
+				<a href="{{ .RelPermalink }}">
+					{{ .Title }}
+				</a>
+			</li>
+			{{ end }}
+		</ul>
+	</div>
+	{{ partial "to-top" . }}
 </body>
 
 </html>
