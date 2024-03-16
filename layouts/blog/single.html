@@ -13,13 +13,19 @@
 	{{ partial "navbar" . }}
 	<div class="content">
 		<h1>{{ .Title }}</h1>
-		<p class="date">{{ .Date }}</p>
-		<p class="description">{{ .Params.description }}</p>
+		<p id="date" class="date">{{ .Date }}</p>
+		<hr />
+		<!-- <p class="description">{{ .Params.description }}</p> -->
 		<article>
 			{{ .Content }}
 		</article>
 	</div>
-	{{ partial "to-top" . }}
+	<!-- {{ partial "to-top" . }} -->
+	<script>
+		let date = document.querySelector("#date");
+		const revised = new Date(date.textContent).toLocaleDateString();
+		date.textContent = revised;
+	</script>
 </body>
 
 </html>

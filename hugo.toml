@@ -1,6 +1,6 @@
 baseURL = 'https://hugonoka.netlify.app/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Reclaim Life'
 [markup.goldmark.parser.attribute]
 title = true
 block = true
