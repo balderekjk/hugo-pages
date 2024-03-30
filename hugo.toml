@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'Reclaim Life'
 [markup.goldmark.renderer]
 unsafe = true
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
 [markup.goldmark.parser.attribute]
 title = true
 block = true

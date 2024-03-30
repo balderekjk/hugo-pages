@@ -227,6 +227,7 @@ td {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(33.3%, auto));
+  justify-content: center;
   align-items: flex-end;
 }
 
@@ -533,9 +534,10 @@ td {
     grid-template-columns: repeat(auto-fit, min(300px, 100%));
   }
 
+  .gcol-2,
   .gcol-2-1,
   .gcol-6-4 {
-    grid-template-columns: 100%;
+    grid-template-columns: min(700px, 100%);
   }
 
   .gcol-2-1 > *:nth-child(2),
