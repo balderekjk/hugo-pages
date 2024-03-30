@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Reclaim Life</title>
+    <title>25th Annual Native Hawaiian Education Association Conference - 2024 on Reclaim Life</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Reclaim Life</description>
+    <description>Recent content in 25th Annual Native Hawaiian Education Association Conference - 2024 on Reclaim Life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Feb 2024 03:15:22 +0000</lastBuildDate>
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/blog/2024-02-21-a-new-page/</link>
       <pubDate>Wed, 21 Feb 2024 03:15:22 +0000</pubDate>
       <guid>http://localhost:1313/blog/2024-02-21-a-new-page/</guid>
-      <description>Wysiwyg Mo bettah than what I made before&#xA;outermost = grid&#xA;inner = subgrid&#xA;needs: minimum width, # of stacked items,&#xA;100 $100 the squarest placeholder image you will ever see! 400x200 $300 a beautifully rectangular placeholder. 300x700 $500 a tall portrait placeholder. 100x200 $150 one more for good measure. 200x100 $150 and&amp;hellip; last one. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum consequatur nulla sunt facere, magni illo odio reiciendis, dolores repellendus soluta impedit quaerat.</description>
+      <description>Wysiwyg Mo bettah than what I made before&#xA;outermost = grid&#xA;inner = subgrid&#xA;needs: minimum width, # of stacked items,&#xA;100 $100 the squarest placeholder image you will ever see! 400x200 $300 a beautifully rectangular placeholder. 300x700 $500 a tall portrait placeholder. 100x200 $150 one more for good measure. 200x100 $150 and&amp;hellip; last one. what? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum consequatur nulla sunt facere, magni illo odio reiciendis, dolores repellendus soluta impedit quaerat.</description>
     </item>
   </channel>
 </rss>

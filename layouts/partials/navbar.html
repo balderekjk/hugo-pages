@@ -1,28 +1,27 @@
 <nav>
-	<ul id="hamburger">
-		<li><label><input type="checkbox" checked>&#9776;</label></li>
-	</ul>
-	<ul id="nav-list" class="flex-center-x green">
-		{{ with .Site.Data.navbar }}
-		{{range .navbar_links}}
-		<li>
-			<a href="{{ .url }}">{{ .name }}
-			</a>
-			{{if .children}}
-			<label>
-				&#9662;
-				<input type="checkbox" checked>
-			</label>
-			<ul>
-				{{range .children }}
-				<li>
-					<a href="{{ .url }}">{{ .name }}</a>
-				</li>
-				{{end}}
-			</ul>
-			{{end}}
-		</li>
-		{{ end }}
-		{{ end }}
-	</ul>
+  <ul id="nav-list">
+    <li id="logo"><a href="/">Logo</a></li>
+    <li id="hamburger"><label><input type="checkbox" checked>&#9776;</label></li>
+    {{ with .Site.Data.navbar }}
+    {{range .navbar_links}}
+    <li>
+      <a href="{{ .url }}">{{ .name }}
+      </a>
+      {{if .children}}
+      <label>
+        &#9662;
+        <input type="checkbox" checked>
+      </label>
+      <ul>
+        {{range .children }}
+        <li>
+          <a href="{{ .url }}">{{ .name }}</a>
+        </li>
+        {{end}}
+      </ul>
+      {{end}}
+    </li>
+    {{ end }}
+    {{ end }}
+  </ul>
 </nav>

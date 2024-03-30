@@ -2,48 +2,47 @@
 <html lang="en">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet" href="/styles.css" />
-	<title>A new page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="/styles.css" />
+  <title>A new page</title>
 </head>
 
 <body>
-	<nav>
-	<ul id="hamburger">
-		<li><label><input type="checkbox" checked>&#9776;</label></li>
-	</ul>
-	<ul id="nav-list" class="flex-center-x green">
-		
-		
-		<li>
-			<a href="/">Home
-			</a>
-			
-		</li>
-		
-		<li>
-			<a href="/blog/">Blog
-			</a>
-			
-		</li>
-		
-		
-	</ul>
+  <nav>
+  <ul id="nav-list">
+    <li id="logo"><a href="/">Logo</a></li>
+    <li id="hamburger"><label><input type="checkbox" checked>&#9776;</label></li>
+    
+    
+    <li>
+      <a href="/">Home
+      </a>
+      
+    </li>
+    
+    <li>
+      <a href="/blog/">Blog
+      </a>
+      
+    </li>
+    
+    
+  </ul>
 </nav>
-	<div class="content">
-		<h1>A new page</h1>
-		<p id="date" class="date">2024-02-21 03:15:22.819 &#43;0000 UTC</p>
-		<hr />
-		
-		<article>
-			<h4 id="wysiwyg"><strong>Wysiwyg</strong></h4>
+  <div class="content">
+    <h1>A new page</h1>
+    <p id="date" class="date">2024-02-21 03:15:22.819 &#43;0000 UTC</p>
+    <hr />
+    
+    <article>
+      <h4 id="wysiwyg"><strong>Wysiwyg</strong></h4>
 <p><strong>Mo bettah than what I made before</strong></p>
 <p>outermost = grid</p>
 <p>inner = subgrid</p>
 <p>needs: minimum width, # of stacked items,</p>
-<ul class="grid gcol-3 cardify">
+<ul class="grid subgrid cardify">
 <li>
 <ul>
 <li><img src="https://placeholder.co/100" alt=""></li>
@@ -101,21 +100,20 @@
 <li>
 <h3 class="secondary" id="150-1">$150</h3>
 </li>
-<li>and&hellip; last one.</li>
+<li>and&hellip; last one. what?</li>
 </ul>
 </li>
 </ul>
 <p class="pull-left"><img src="https://placeholder.co/600x200" alt=""></p>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum consequatur nulla sunt facere, magni illo odio reiciendis, dolores repellendus soluta impedit quaerat. Maiores repudiandae eaque vel, incidunt soluta eum, nesciunt quis ipsam beatae delectus ipsa ullam enim, alias possimus.</p>
+<p class="padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum consequatur nulla sunt facere, magni illo odio reiciendis, dolores repellendus soluta impedit quaerat. Maiores repudiandae eaque vel, incidunt soluta eum, nesciunt quis ipsam beatae delectus ipsa ullam enim, alias possimus.</p>
 
-		</article>
-	</div>
-	
-	<script>
-		let date = document.querySelector("#date");
-		const revised = new Date(date.textContent).toLocaleDateString();
-		date.textContent = revised;
-	</script>
+    </article>
+  </div>
+  <script>
+    let date = document.querySelector("#date");
+    const revised = new Date(date.textContent).toLocaleDateString();
+    date.textContent = revised;
+  </script>
 </body>
 
 </html>
