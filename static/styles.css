@@ -14,17 +14,22 @@
   --announcement-alt: hsl(0, 35%, 97%);
 }
 
+html {
+  background-color: hsl(0, 0%, 11%);
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   font-size: 1.1em;
+  background-color: var(--white);
   color: var(--black);
 }
 
 hr {
   display: block;
   border-color: var(--primary-color);
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 
 blockquote {
@@ -45,7 +50,6 @@ nav {
 nav ul,
 footer ul {
   list-style: none;
-  margin: 0;
   padding: 0;
   gap: 2rem;
 }
@@ -110,6 +114,7 @@ td {
 #nav-list {
   display: flex;
   align-items: flex-end;
+  margin: 0;
   padding: 1.6rem 1.4rem;
   text-align: center;
 }
@@ -127,10 +132,6 @@ td {
 #nav-list a:hover {
   color: white;
 }
-
-/* #nav-list label {
-  padding-bottom: unset;
-} */
 
 #nav-list label:has(input:checked) + ul {
   display: none;
@@ -245,6 +246,7 @@ td {
 
 .grid,
 .grid > li > ul {
+  margin-bottom: 1rem;
   padding: 0;
   list-style: none;
 }
@@ -315,9 +317,6 @@ td {
 
 .grid > li > ul > li:not(:has(img)) {
   margin-inline: 0.5rem;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  overflow: auto;
 }
 
 .grid > li > ul > li:has(img) {
@@ -428,12 +427,21 @@ td {
   margin: 1em 1rem;
 }
 
+.margin-inline {
+  margin-inline: 1rem;
+}
+
 .margin-top {
   margin-top: 1em;
 }
 
 .margin-bottom {
   margin-bottom: 1em;
+}
+
+.mz,
+.mz > p {
+  margin: 0;
 }
 
 .padding,
@@ -492,8 +500,16 @@ td {
   font-weight: 300;
 }
 
+.text-bold {
+  font-weight: 600;
+}
+
 .text-thick {
   font-weight: 700;
+}
+
+.text-normal {
+  font-weight: 400;
 }
 
 .blockquote {
